@@ -1,1 +1,33 @@
-<p>login works!</p>
+<section class="corpo">
+    <div class="grupo">
+
+        <div>
+            <img src="images/logo.png">
+        </div>
+
+        <div class="div-form">
+            <form>
+                <div class="div-tel">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" required>
+                </div>
+                <div class="div-senha">
+                    <label for="senha">Senha</label>
+                    <div class="senha">
+                        <input [type]="isPassVisible? 'text':'password'" required>
+                        <i (click)="changeIcon()" [ngClass]="isPassVisible ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"></i>
+                    </div>
+                </div>
+                <div class="div-esqueci_senha">
+                    <a href="#">Esqueci a Senha</a>
+                </div>
+                <div class="div-btn">
+                    <button>Entrar</button>
+                </div>
+                <div class="div-criar">
+                    <a (click)="redirectCadastrar()">Criar uma Conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
