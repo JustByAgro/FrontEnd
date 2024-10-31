@@ -1,0 +1,61 @@
+.container-landing-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 200vh;
+}
+.logo-marca{
+    height: 300px;
+}
+.titulo-principal{
+    text-align: center;
+    color: darkolivegreen;
+}
+.negrito-aqui{
+    color: darkgreen;
+}
+.container-informacoes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    width: 350px;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 4px #69A458 solid;
+    background-color: white;
+    font-weight: normal;
+}
+.titulo-informacoes{
+    margin-top: 30px;
+    color: #4A4949;
+}
+.produtos-negrito,.mudas-negrito,
+.sementes-negrito,.alcance-negrito,
+.descricao-negrito{
+    color: #69A458;
+}
+.descricao{
+    font-weight: normal;
+    color: #4A4949;
+    padding: 12px;
+}
+.container-botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+.botoes-landing-page{
+    width: 250px;
+    height: 60px;
+    border-radius: 8px;
+    border: 3px solid #69A458;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+    color: #69A458;
+}
