@@ -1,0 +1,102 @@
+.container-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 460px;
+    height: 200vh;
+    gap: 100px;
+    background-color: transparent;
+}
+.container-informacoes-perfil{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: transparent; 
+}
+.foto-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+.imagem-perfil{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3307176:1669862939/channels4_profile.jpg?f=16x9&$p$f=2b93445");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.informacoes-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 360px;
+    background-color: transparent;
+}
+
+.contato-usuario{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    height: 80px;
+    background-color: transparent;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.telefone{
+    font-weight: normal;
+}
+.editar-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+}
+.imagem-engrenagem{
+    height: 30px;
+    cursor: pointer;
+}
+.container-produtos{
+    display: flex;
+    flex-direction: row;
+    width: 460px;
+    height: 70%;
+    background-color: transparent;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    gap: 10px;
+    background-color: transparent;
+    box-shadow: 0px 0px 4px 3px;
+}
+.imagem-produto{
+    height: 200px;
+}
+.titulo-produto{
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+}
+.precos{
+    text-align: center;
+    font-weight: normal;
+}
