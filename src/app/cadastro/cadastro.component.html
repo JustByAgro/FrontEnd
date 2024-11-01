@@ -1,1 +1,48 @@
-<p>cadastro works!</p>
+<section class="corpo">
+    <div class="grupo">
+        <div class="div-foto">
+            <div>
+                <i class="fa-solid fa-plus"></i> 
+            </div>
+        </div>
+
+        <div class="div-form">
+            <form class="form">
+                <div class="div-nome">
+                    <label for="nome">Nome</label>
+                    <input type="text">
+                </div>
+                <div class="div-tel">
+                    <label for="telefone">Telefone</label>
+                    <input type="number">
+                </div>
+                <div class="div-cidade">
+                    <label>Cidade</label>
+                    <input type="text">
+                </div>
+                <div class="div-senha">
+                    <label>Senha</label>
+                    <div >
+                        <input [type]="isVisiblePass ? 'text':'password'">
+                        <i (click)="changeIcon(0)" [ngClass]="isVisiblePass ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"></i>
+                    </div>
+                </div>
+                <div class="div-conf_senha">
+                    <label>Confirmar Senha</label>
+                    <div>
+                        <input [type]="isVisibleConfPass ? 'text':'password'">
+                        <i (click)="changeIcon(1)" [ngClass]="isVisibleConfPass ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"></i>
+                    </div>  
+                </div>
+                <div class="div-btn">
+                    <button type="submit">Cadastrar</button>
+                </div>
+                <div class="div-link">
+                    <a (click)="redirectLogin()">Já tenho conta</a>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+</section>
