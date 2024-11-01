@@ -14,8 +14,8 @@
                 <div class="div-senha">
                     <label for="senha">Senha</label>
                     <div class="senha">
-                        <input [type]="isPassVisible? 'text':'password'" required>
-                        <i (click)="changeIcon()" [ngClass]="isPassVisible ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"></i>
+                        <input [type]="isVisible? 'text':'password'" required>
+                        <i (click)="changeIcon()" [ngClass]="isVisible ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash'"></i>
                     </div>
                 </div>
                 <div class="div-esqueci_senha">

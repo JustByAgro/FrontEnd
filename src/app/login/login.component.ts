@@ -14,10 +14,11 @@ export class LoginComponent {
 
 
   // Funções de animação
-  isPassVisible: boolean = false;
-  changeIcon() {
-    this.isPassVisible = !this.isPassVisible;
+  isVisible: boolean = false;
+  changeIcon(){
+    this.isVisible = !this.isVisible
   }
+
 
   redirectCadastrar(){
     this.router.navigate(['/cadastro'])
