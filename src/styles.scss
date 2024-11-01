@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --gray: rgba(84, 84, 84, 0.7);
+    --primary: #7AC979;
+    --delete: #C97979;
+    --remove: #E62F2F;
+}
+
+*{
+    margin: 0px;
+    padding: 0px; 
+    
+    body{
+        height: 100vh;
+
+    }   
+}
