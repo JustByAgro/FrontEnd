@@ -1,6 +1,15 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './paginas/home/home.component';
+import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
+import { TelaVendedorComponent } from './paginas/tela-vendedor/tela-vendedor.component';
+import { BackupComponentsComponent } from './components/backup-components/backup-components.component';
+import { CardComponent } from './components/card/card.component';
 
 export const routes: Routes = [
-    { path: 'login', component:LoginComponent }
+    { path:'', component:LandingPageComponent },
+    { path: 'home', component:HomeComponent },
+    { path: 'vendedor', component:TelaVendedorComponent },
+    /* rotas para teste */
+    { path: 'backup', component:BackupComponentsComponent },
+    { path: 'card', component: CardComponent }
 ];
