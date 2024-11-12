@@ -92,7 +92,7 @@ $gray: rgba(84, 84, 84, 0.7);
     }
 }
 
-.card-jb{
+.card-jb{   
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         overflow: hidden;
@@ -119,4 +119,40 @@ $gray: rgba(84, 84, 84, 0.7);
             }
         }
     
+}
+@media screen and (max-width:480px) {
+    .card-jb{   
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        overflow: hidden;
+        width: 160px;
+        height: 200px;
+        border-radius: 10px;
+        img{
+            object-fit: contain;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            
+            .title{
+                font-size: 10px;
+                font-weight: bold;
+            }
+            .city{
+                font-size: 10px;
+            }
+            .price{
+                font-weight: 10px;
+                font-weight: bold;
+                color: var(--primary);
+            }
+            button{
+                display: none;
+            }
+        }
+    
+}
 }
