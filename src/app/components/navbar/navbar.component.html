@@ -1,24 +1,40 @@
 <section class="d-flex w-100 justify-content-center">
     <div class="container-nav row w-100">
         
+        <!-- Div da logo do produto -->
         <div class="div-logo">
             <img src="assets/logoPreta.svg" class="img-fluid">
         </div>
 
-
+        <!-- Barra de pesquisa e botão home -->
         <div class="div-icons">
+
+            <!-- Barra de pesquisa -->
             <div class="pesquisa">
-                <input>
+                <input class="p-3">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+
+            <!-- Botão home -->
             <div class="home">
                 <i class="fa-solid fa-house"></i>
                 <p>home</p>
             </div>
+
         </div>
+
+        <!-- Botão virar vendedor ou foto de perfil -->
         <div class="div-img">
+
+            <!-- Foto de perfil se estiver logado -->
             <img *ngIf="isLogado" src="assets/agricultorLogin.png" class="img-fluid"> 
-            <button *ngIf="!isLogado" class="button-primary-outline">Virar Vendedor</button>
+
+            <!-- Botão virar vendedor se não estiver logado -->
+            <btn
+             [tipo]="'primary'"
+             [texto]="'Virar Vendedor'" 
+             *ngIf="!isLogado"/>
+
         </div>
 
      
