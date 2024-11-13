@@ -129,7 +129,8 @@ $gray: rgba(84, 84, 84, 0.7);
         height: 200px;
         border-radius: 10px;
         img{
-            object-fit: contain;
+            height: 100px;
+            width: 100%;
         }
         div{
             display: flex;
@@ -147,7 +148,7 @@ $gray: rgba(84, 84, 84, 0.7);
             .price{
                 font-weight: 10px;
                 font-weight: bold;
-                color: var(--primary);
+                color: var($primary);
             }
             button{
                 display: none;
