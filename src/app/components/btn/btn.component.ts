@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-btn',
+  selector: 'btn',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './btn.component.html',
