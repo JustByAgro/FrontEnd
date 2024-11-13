@@ -1,0 +1,106 @@
+@import '../../../styles.scss';
+
+.container-nav{
+    display: flex;
+    gap: 10px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 160px;
+   
+
+    @media screen and (min-width:860px) {
+        margin-left: 60px;
+        margin-right: 60px;
+    
+    }
+    .div-logo{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            max-height: 160px;
+        }
+    }
+
+    .div-icons{
+        width: 50%;
+       gap:10px;
+        display: flex;
+        .pesquisa{
+            width: 80%;
+            
+            display: flex;
+            position: relative;
+            input{
+                width: 100%;
+                height: 50px;
+                background-color: #E6E6E6;
+                border: none;
+                border-radius: 10px;
+                padding-left: 10px;
+
+                &:focus{
+                    outline: none;
+                    border: 2px solid $primary;
+                }
+            }
+            i{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 26px;
+                color: $primary;
+            }
+        }
+        .home{
+
+            cursor: pointer;
+            display: flex;
+            width: 20%;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 26px;
+                color:$primary;
+            }
+            p{
+                display: none;
+            }
+            @media screen and (min-width: 860px) {
+                
+                p{
+                    display: block;
+                    font-size: 26px;
+                    color: $primary;
+                    margin-left: 5px;
+                    font-weight: bold;
+
+                }
+            }
+        }
+    }
+
+    .div-img{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+ 
+        img{
+            
+            max-height: 100px;
+            aspect-ratio: 1;
+            border-radius: 100%;
+           
+        }
+        button{
+            font-size: 10px;
+            height: 40px;
+            width: 100%;
+        }
+    }   
+}
