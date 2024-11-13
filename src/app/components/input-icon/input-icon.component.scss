@@ -1,0 +1,28 @@
+.input-icon-jb{
+    display: flex;
+    flex-direction: column;
+    label{
+        color: $gray;
+        font-size: 24px;
+    }
+    div{
+        position: relative;
+        input{
+            border: 2px solid $gray;
+            border-radius: 10px;
+            padding-left: 10px;
+            height: 50px;
+            width: 100%;
+        }
+        i{
+            position: absolute;
+            right: 10px;
+            top:50%;
+            transform: translateY(-50%);
+            color: $gray;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
+

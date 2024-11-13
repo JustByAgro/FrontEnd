@@ -1,0 +1,39 @@
+.button-primary{
+    background-color: $primary;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 160px;
+    color: white;
+    font-weight: bold;
+}
+
+.button-primary-outline{
+    border: 2px solid $primary;
+    border-radius: 10px;
+    width: 160px;
+    height: 50px; 
+    background-color: transparent;
+    font-weight: 700;
+    color: $primary;
+}
+
+.button-danger{
+    background-color: $danger;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 160px;
+    color: white;
+    font-weight: bold;
+}
+
+.button-danger-outline{
+    border: 2px solid $danger;
+    border-radius: 10px;
+    width: 160px;
+    height: 50px; 
+    background-color: transparent;
+    font-weight: 700;
+    color: $danger;
+}
