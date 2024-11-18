@@ -1,9 +1,9 @@
-<section class="d-flex w-100 justify-content-center">
+<section class="d-flex w-100">
     <div class="container-nav row w-100">
-        
+
         <!-- Div da logo do produto -->
         <div class="div-logo">
-            <img src="assets/logoPreta.svg" class="img-fluid">
+            <img src="assets/logoPreta.svg">
         </div>
 
         <!-- Barra de pesquisa e botão home -->
@@ -27,16 +27,16 @@
         <div class="div-img">
 
             <!-- Foto de perfil se estiver logado -->
-            <img *ngIf="isLogado" src="assets/agricultorLogin.png" class="img-fluid"> 
+            <img *ngIf="isLogado" src="assets/agricultorLogin.png" class="img-fluid">
 
             <!-- Botão virar vendedor se não estiver logado -->
             <btn
              [tipo]="'primary'"
-             [texto]="'Virar Vendedor'" 
+             [texto]="'Virar Vendedor'"
              *ngIf="!isLogado"/>
 
         </div>
 
-     
-    </div> 
+
+    </div>
 </section>

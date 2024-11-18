@@ -4,8 +4,8 @@
     background-color: $primary;
     border: none;
     border-radius: 10px;
-    height: 50px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
     color: white;
     font-weight: bold;
 }
@@ -14,7 +14,7 @@
     border: 2px solid $primary;
     border-radius: 10px;
     width: 160px;
-    height: 50px; 
+    height: 50px;
     background-color: transparent;
     font-weight: 700;
     color: $primary;
@@ -34,7 +34,7 @@
     border: 2px solid $danger;
     border-radius: 10px;
     width: 160px;
-    height: 50px; 
+    height: 50px;
     background-color: transparent;
     font-weight: 700;
     color: $danger;

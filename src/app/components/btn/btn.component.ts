@@ -11,6 +11,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BtnComponent {
   @Input() tipo = 'primary';
   @Input() texto = 'texto';
+  @Input() width = '160px';
+  @Input() height = '50px';
 
   classe = ''
 
