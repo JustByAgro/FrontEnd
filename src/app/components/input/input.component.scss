@@ -3,15 +3,27 @@
 .input-jb{
     display: flex;
     flex-direction: column;
-    label{
-        color: $gray;
-        font-size: 24px;
 
+    label{
+        color: $text;
+        font-size: 1.5rem;
     }
     input{
-        border: 2px solid $gray;
+        border: 2px solid $text;
         border-radius: 10px;
         padding-left: 10px;
         height: 50px;
+    }
+
+    input {
+        border: 2px solid $text;
+        border-radius: 10px;
+        padding-left: 10px;
+        height: 50px;
+        color: $text;
+
+        &:focus {
+            outline: none;
+        }
     }
 }
