@@ -1,23 +1,32 @@
-<section class="vh-100">
-    <div class="container-fluid h-100">
-        <div class="row d-flex justify-content-center">
-            <div class="col-6">
-                <img class="img-fluid" src="assets/agricultorLogin.png" alt="Agricultor">
-            </div>
-            <div class="col-6">
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- <div class="row m-0">
-    <section class="p-0">
+<section>
+    <!-- Imagem do agricultor -->
+    <div class="agricultor">
         <img src="assets/agricultorLogin.png" alt="Agricultor">
-    </section>
-    <section class="p-0 m-0">
-        <form action="">
+    </div>
 
-        </form>
-    </section>
-</div> -->
+    <form>
+        <!-- Imagem da logo -->
+        <div class="logo">
+            <img src="assets/logoVerde.png" alt="JustBuy Agro">
+        </div>
+
+        <!-- Seção dos inputs -->
+        <div class="inputs">
+            <input-jb [texto]="'Número'" class="input" />
+            <input-icon-jb [texto]="'Senha'" class="input" />
+            <a href="#">Esqueci a senha</a>
+        </div>
+
+        <!-- Engloba botão e o link para registro -->
+        <div class="botao-link">
+
+            <!-- Botão para entrar -->
+            <btn [texto]="'ENTRAR'"/>
+
+            <!-- Link para cadastro -->
+            <a href="#" class="criar-conta">Criar uma conta</a>
+            
+        </div>
+    </form>
+
+</section>
