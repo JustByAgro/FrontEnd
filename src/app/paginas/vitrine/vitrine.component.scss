@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 60px;
+
+    .vendedor-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .vendedor {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 22px;
+
+            .imagem-vendedor {
+                img {
+                    height: auto;
+                    width: 150px;
+                }
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                .nome {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                .numero {
+                    font-size: 1.5rem;
+                }
+                .cidade {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .imagem-whatsapp {
+            img {
+                height: auto;
+                width: 80px;
+            }
+        }
+    }
+
+    .produtos-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            grid-gap: 30px 0;
+            justify-content: space-between;
+
+            .produto {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    main {
+        .produtos-container {
+            .produtos {
+                display: grid;
+                grid-template-columns: repeat(2, 450px);
+
+                .produto {
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    main {
+        .produtos-container {
+            .produtos {
+                display: grid;
+                grid-template-columns: repeat(2, 380px);
+
+                .produto {
+                    width: 380px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    main {
+        .produtos-container {
+            .produtos {
+                display: grid;
+                grid-template-columns: repeat(2, 320px);
+
+                .produto {
+                    width: 320px;
+                }
+            }
+        }
+    }
+}

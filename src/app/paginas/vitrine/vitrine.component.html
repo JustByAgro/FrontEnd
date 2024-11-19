@@ -1,0 +1,36 @@
+<app-navbar/>
+
+<main>
+    <!-- Sobre o comprador -->
+    <div class="vendedor-info">
+        <!-- Informação e foto do comprador -->
+        <div class="vendedor">
+            <!-- Imagem do comprador -->
+            <div class="imagem-vendedor">
+                <img src="assets/imagem-vendedor.png" alt="vendedor">
+            </div>
+
+            <!-- Informações do comprador -->
+            <div class="info">
+                <p class="nome">Allan produtos</p>
+                <p class="numero">(14)99888-8800</p>
+                <p class="cidade">Pompéia</p>
+            </div>
+        </div>
+
+        <!-- Imagem do whatsapp -->
+        <div class="imagem-whatsapp">
+            <img src="assets/imagem-whatsapp.png" alt="whatsapp">
+        </div>
+    </div>
+
+    <!-- Sobre os produtos -->
+    <div class="produtos-container">
+        <p>Produtos</p>
+        <div class="produtos">
+            @for(numero of numeros; track numero) {
+                <card class="produto"/>
+            }
+        </div>
+    </div>
+</main>
