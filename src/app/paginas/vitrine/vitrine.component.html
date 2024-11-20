@@ -7,14 +7,14 @@
         <div class="vendedor">
             <!-- Imagem do comprador -->
             <div class="imagem-vendedor">
-                <img src="assets/imagem-vendedor.png" alt="vendedor">
+                <img [src]="caminhoImagem" alt="vendedor">
             </div>
 
             <!-- Informações do comprador -->
             <div class="info">
-                <p class="nome">Allan produtos</p>
-                <p class="numero">(14)99888-8800</p>
-                <p class="cidade">Pompéia</p>
+                <p class="nome">{{ nome }}</p>
+                <p class="numero">{{ numero }}</p>
+                <p class="cidade">{{ cidade }}</p>
             </div>
         </div>
 

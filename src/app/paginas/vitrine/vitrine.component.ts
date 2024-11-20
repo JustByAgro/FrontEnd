@@ -12,4 +12,10 @@ import { range } from 'rxjs';
 })
 export class VitrineComponent {
   numeros = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+  caminhoImagem = 'assets/imagem-vendedor.png'
+
+  nome = 'Allan produtos'
+  numero = '(14)99888-8800'
+  cidade = 'Pompéia'
 }
