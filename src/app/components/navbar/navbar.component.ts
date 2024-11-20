@@ -10,9 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent { 
-
-
-
-  //Faz a verificação de login
+  // Faz a verificação de login
   isLogado: boolean = false;
 }
