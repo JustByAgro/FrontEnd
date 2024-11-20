@@ -12,8 +12,8 @@
 
         <!-- Seção dos inputs -->
         <div class="inputs">
-            <input-jb [texto]="'Número'" class="input" />
-            <input-icon-jb [texto]="'Senha'" class="input" />
+            <input-jb [texto]="'Número'" class="input" [placeHolder]="'Digite seu número'"/>
+            <input-icon-jb [texto]="'Senha'" class="input" [placeHolder]="'Digite sua senha'"/>
             <a href="#">Esqueci a senha</a>
         </div>
 
@@ -21,7 +21,7 @@
         <div class="botao-link">
 
             <!-- Botão para entrar -->
-            <btn [texto]="'ENTRAR'"/>
+            <btn [texto]="'ENTRAR'" class="btn"/>
 
             <!-- Link para cadastro -->
             <a href="#" class="criar-conta">Criar uma conta</a>

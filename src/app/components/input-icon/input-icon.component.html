@@ -1,7 +1,7 @@
 <div class="input-icon-jb">
     <label>{{ texto }}</label>
     <div>
-        <input [type]="mostrar ? 'text' : 'password'">
+        <input [type]="mostrar ? 'text' : 'password'" [placeholder]="placeHolder">
         <i (click)="toggleImage()" [ngClass]="mostrar ? ['fa-solid','fa-eye'] : ['fa-solid', 'fa-eye-slash']"></i>
     </div>
 </div>

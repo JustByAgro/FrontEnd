@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './input-icon.component.scss'
 })
 export class InputIconComponent {
+  @Input() placeHolder = '';
   @Input() texto = 'label';
 
   mostrar = false;

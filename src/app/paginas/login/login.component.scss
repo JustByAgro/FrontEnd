@@ -73,11 +73,16 @@ section {
             justify-content: center;
             align-items: center;
             gap: 20px;
+
             .criar-conta {
                 text-decoration: none;
                 &:hover {
                     text-decoration: underline;
                 }
+            }
+
+            .btn {
+                width: 150px;
             }
         }
     }
